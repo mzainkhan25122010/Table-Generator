@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Generator</title>
+</head>
+<style>
+
+</style>
+
+<body>
+    <script>
+        let num = + prompt('Enter your table number');
+        let length = + prompt('Enter your length number');
+
+        if (isNaN(num) || isNaN(length)) {
+            document.write('Error: Enter only number.')
+        }
+        else {
+            document.write(' <h1>Table Of ' + num + ' </h1> ')
+
+            for (i = 0; i <= length; i++) {
+                document.write(num + 'X' + i + '=' + i * num + '<br>')
+            }
+        }
+    </script>
+</body>
+
+</html>
